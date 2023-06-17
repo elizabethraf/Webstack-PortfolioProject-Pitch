@@ -4,7 +4,7 @@
 def vendorEntity(item) -> dict:
     """Display vendor information"""
     return {
-            "id": item["_id"].toString(),
+            "id": str(item["_id"]),
             "name": item["name"],
             "email": item["email"],
             "location": item["location"],
@@ -12,6 +12,6 @@ def vendorEntity(item) -> dict:
             }
 
 
-def all_vendors(all_entities) -> list:
+def all_vendors(entities) -> list:
     """Define all vendors on display"""
     return [vendorEntity(item) for item in entities]
