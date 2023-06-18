@@ -7,7 +7,7 @@ from config.db import vendor_coll, product_coll
 from schemas.vendor import vendorEntity, all_vendors
 
 vendor = APIRouter(
-        prefix='/vendor',
+        prefix='/vendors',
         tags=['Vendors']
         )
 
