@@ -9,9 +9,9 @@ def vendorEntity(item) -> dict:
             "email": item["email"],
             "location": item["location"],
             "contact number": item["contact_number"]
-            }
+     }
 
 
-def all_vendors(entities) -> list:
+def many_vendors(entities) -> list:
     """Define all vendors on display"""
     return [vendorEntity(item) for item in entities]
