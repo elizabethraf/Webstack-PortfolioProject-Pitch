@@ -9,3 +9,9 @@ class Vendors(BaseModel):
     email: Optional[str] = None
     location: str
     contact_number: str
+
+class UpdateVendors(BaseModel):
+    name: Optional[str] = None
+    email: Optional[str] = None
+    location: Optional[str] = None
+    contact_number: Optional[str] = None
